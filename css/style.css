@@ -74,3 +74,10 @@ input[type=number], select {
 
   }
    
+@media only screen and (max-width:480px)  {
+    .main-content{
+        flex-direction: column;
+    }
+
+    
+}
