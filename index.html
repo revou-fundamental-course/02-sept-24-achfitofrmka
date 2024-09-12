@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="..js\script.js" defer></script>
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <header class="main-header">
         <H1> Welkam Geiss</H1>
-        <P> swelamat datang di ind*mar*t, selamat berbelanja...</P>
+        <P> swelamat datang di indmrt, selamat berbelanja...</P>
 
     </header>
-
+                    
     <main>
         <section class="selection-content">
             <button href="#" type="button" class="selection-btn teal-color" >Segitiga</button>
@@ -20,6 +21,9 @@
 
         </section>
         <section class="main-content">
+          
+                             <!--left-content-->
+          
             <aside>
                 <header>
                     <h1 class="luas-segitiga-header">Luas Segitiga</h1>
@@ -42,32 +46,32 @@
     
                     <div class="input-wrapper">
                         <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas" type="number"/>
+                        <input id="panjang-alas" type="number" required/>
                     </div>
                     <div class="input-wrapper">
                         <label for="tinggi">tinggi</label>
-                        <input id="tinggi" type="number"/>
+                        <input id="tinggi" type="number" required/>
                     </div>
                      
                     <P id="result">hasil perhitungan</P>
     
-                    <button>hitung</button>
+                    <button onclick="luasbtn()">hitung</button>
     
                 </form>
     
             </aside>
     
-    
+                                 <!--right-content-->
     
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                    <h1 class="luas-segitiga-header">Keliling Segitiga</h1>
     
                 </header>
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga</p>
-                    <P></P>
+                    <p>Rumus keliling Segitiga</p>
+                    <P>sisi 1 + sisi 2 + sisi 3</P>
                     
     
                 </article>
@@ -76,21 +80,25 @@
      
                 <form>
                     <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                        <h1 class="luas-segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
     
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas" type="number"/>
+                        <label for="sisi1">sisi 1</label>
+                        <input id="sisi-satu" type="number"placeholder="sisi 1" required/>
                     </div>
                     <div class="input-wrapper">
-                        <label for="tinggi">tinggi</label>
-                        <input id="tinggi" type="number"/>
+                        <label for="tinggi">sisi 2</label>
+                        <input id="sisi-dua" type="number" placeholder="sisi 2" required/>
+                    </div>
+                    <div class="input-wrapper"></div>
+                        <label for="tinggi">sisi 3</label>
+                        <input id="sisi-tiga" type="number" placeholder="sisi 3"required />
                     </div>
                      
                     <P id="result">hasil perhitungan</P>
     
-                    <button>hitung</button>
+                    <button onclick="kelbtn()">hitung</button>
     
                 </form>
     
